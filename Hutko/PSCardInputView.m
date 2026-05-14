@@ -50,10 +50,26 @@
 
 @implementation PSCardInputView
 
++ (NSBundle *)resourceBundle {
+#ifdef SWIFT_PACKAGE
+    NSBundle *swiftPackageBundle = SWIFTPM_MODULE_BUNDLE;
+    if ([swiftPackageBundle pathForResource:@"PSCardInputView" ofType:@"nib"]) {
+        return swiftPackageBundle;
+    }
+#endif
+
+    NSBundle *classBundle = [NSBundle bundleForClass:[PSCardInputView class]];
+    if ([classBundle pathForResource:@"PSCardInputView" ofType:@"nib"]) {
+        return classBundle;
+    }
+
+    return classBundle;
+}
+
 - (void)setupView {
     self.emailConstraints = @[];
     self.translatesAutoresizingMaskIntoConstraints = NO;
-    [[[NSBundle bundleForClass:[PSCardInputView class]] loadNibNamed:@"PSCardInputView" owner:self options:nil] firstObject];
+    [[[[self class] resourceBundle] loadNibNamed:@"PSCardInputView" owner:self options:nil] firstObject];
     [self.view setFrame:self.bounds];
     [self setUpLocalization:[PSHutkoApi getLocalization]];
     [self addSubview:self.view];
