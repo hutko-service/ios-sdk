@@ -18,7 +18,7 @@ Hutko supports multiple methods for installing the library in a project.
 To integrate Hutko into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'Hutko', '~> 0.9.3'
+pod 'Hutko', '~> 0.10.4'
 ```
 
 ### Installation with Swift Package Manager
@@ -27,7 +27,7 @@ Once you have your Swift package set up, adding Hutko as a dependency is as easy
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/hutkorg/ios-sdk.git", .upToNextMajor(from: "0.9.3"))
+    .package(url: "https://github.com/hutkorg/ios-sdk.git", .upToNextMajor(from: "0.10.4"))
 ]
 ```
 

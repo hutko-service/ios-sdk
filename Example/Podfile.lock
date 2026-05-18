@@ -1,5 +1,5 @@
 PODS:
-  - Hutko (0.10.2)
+  - Hutko (0.10.4)
 
 DEPENDENCIES:
   - Hutko (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Hutko: b2d9c876fc10daec7109314b238be114dd23ded9
+  Hutko: b6cc35cdba22b8368041f17558c690457883d8df
 
 PODFILE CHECKSUM: 096a1c0821f3a6d0e0767de6321c89915afa7b07
 

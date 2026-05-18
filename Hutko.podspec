@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Hutko"
-  s.version          = "0.10.3"
+  s.version          = "0.10.4"
   s.summary          = "Library for accepting payments directly from iOS application's clients."
 
   s.homepage         = "https://github.com/hutkorg/ios-sdk"

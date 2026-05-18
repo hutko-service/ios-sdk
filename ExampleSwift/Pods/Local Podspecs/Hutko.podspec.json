@@ -1,6 +1,6 @@
 {
   "name": "Hutko",
-  "version": "0.10.2",
+  "version": "0.10.4",
   "summary": "Library for accepting payments directly from iOS application's clients.",
   "homepage": "https://github.com/hutkorg/ios-sdk",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/hutkorg/ios-sdk.git",
-    "tag": "0.10.2"
+    "tag": "0.10.4"
   },
   "platforms": {
     "ios": "12.0"
